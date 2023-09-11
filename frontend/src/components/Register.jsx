@@ -41,7 +41,7 @@ const Register = () => {
   }
 
   const register = e => {
-    const {username,email,password,confirmPassword,image} = state
+    const {username,email,password,confirmPassword,image} = state;
     e.preventDefault();
 
     const formData = new FormData();
@@ -125,7 +125,7 @@ const Register = () => {
             <div className="form-group">
               <div className="file-image">
                 <div className="image">
-                  {loadImage ? <img src={loadImage}/> : ''}
+                  {loadImage ? <img src={loadImage} alt="NoPhoto"/> : ''}
                 </div>
                 <div className="file">
                   <label htmlFor="image">Select Image</label>
